@@ -1,6 +1,6 @@
-import "./SingleRecipePage.css";
+import "./RecipeCard.css";
 
-export const SingleRecipePage = ({ selectedRecipe, clickFn }) => {
+export const RecipeCard = ({ selectedRecipe, clickFn }) => {
   const info = selectedRecipe.recipe;
 
   const ingredients = () => {
