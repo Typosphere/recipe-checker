@@ -1,6 +1,6 @@
 import { RecipeSearch } from "../components/ui/RecipeSearch";
 import { useState } from "react";
-import { SingleRecipePage } from "./SingleRecipePage";
+import { RecipeCard } from "./RecipeCard";
 import "./RecipeListPage.css";
 
 export function RecipeListPage() {
@@ -10,7 +10,7 @@ export function RecipeListPage() {
     <>
       <div className="RecipeListPage">
         {recipe ? (
-          <SingleRecipePage selectedRecipe={recipe} clickFn={setRecipe} />
+          <RecipeCard selectedRecipe={recipe} clickFn={setRecipe} />
         ) : (
           <RecipeSearch clickFn={setRecipe} />
         )}
